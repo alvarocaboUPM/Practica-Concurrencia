@@ -1,0 +1,22 @@
+- Para poder compilar y ejecutar tu código necesitarás adaptarlo a tu
+  IDE favorito.
+
+- Si lo haces desde la línea de comandos bastará con compilar:
+  javac -d classes -cp .:cclib-0.4.9.jar:jcsp.jar *.java
+
+- Y ejecutar:
+  java -cp .:classes:cclib-0.4.9.jar:jcsp.jar cc.controlReciclado.PlantaReciclaje
+
+- No olvides cambiar en PlantaReciclaje.java la creación del recurso
+  compartido en la línea 14 de acuerdo a la práctica que quieras
+  simular
+
+  -      new ControlRecicladoMonitor();
+  +      new ControlRecicladoCSP();
+
+- Y por supuesto no olvides recompilar todo antes de volver a ejecutar:
+  javac -cp .:classes:cclib-0.4.9.jar:jcsp.jar *.java
+
+- Se irán publicando actualizaciones al código de apoyo con mejoras en
+  el simulador, correcciones de posibles errores y plantillas de
+  código más elaboradas.
